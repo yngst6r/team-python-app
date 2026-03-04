@@ -1,12 +1,12 @@
 import argparse
 from rich import print
 
-from config import APP_NAME, VERSION
+from config import APP_NAME, VERSION, DEFAULT_NAME
 from utils import normalize_name, rich_greeting
 
 def parse_args() -> argparse.Namespace:
     p = argparse.ArgumentParser(prog="greet", description="Simple greeting CLI")
-    p.add_argument("-n", "--name", default="world", help="Name to greet")
+    p.add_argument("-n", "--name", default=DEFAULT_NAME, help="Name to greet")
     p.add_argument("--caps", action="store_true", help="Uppercase output")
     p.add_argument("--version", action="store_true", help="Show version")
     return p.parse_args()
