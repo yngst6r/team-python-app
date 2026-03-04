@@ -1,2 +1,2 @@
-APP_NAME = "Team Python App (main)"
+APP_NAME = "Team Python App (feature)"
 VERSION = "0.1.0"
